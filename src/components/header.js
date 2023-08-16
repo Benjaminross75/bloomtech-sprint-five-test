@@ -43,6 +43,9 @@ const headerAppender = (selector) => {
   // We are taking care of passing in the correct selector on line 16,
   // so all that you need to do is pass it into the querySelector method
   // for the tests to work!
+    const headerElement = Header('BloomTech Times', 'Janurary 6, 2021','26°' )
+  const entryPoint = document.querySelector(selector);
+   entryPoint.appendChild(headerElement)
 }
 
 export { Header, headerAppender }
